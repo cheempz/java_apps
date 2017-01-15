@@ -9,3 +9,5 @@ WORKDIR $CATALINA_HOME/webapps
 RUN for app_name in $STACK_APPS ; do \
         curl -L -o ${app_name}.war https://s3.amazonaws.com/apm-qa-automation/java/compiled-test-apps/${app_name}.war-latest ; \
     done
+
+WORKDIR $CATALINA_HOME
