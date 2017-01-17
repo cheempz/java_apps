@@ -1,4 +1,4 @@
-FROM cheempz/java_appservers:latest
+FROM cheempz/java_appservers:j8_tomcat7
 
 ENV STACK_APPS='test-spring-mvc4 test-xml-soap'
 
